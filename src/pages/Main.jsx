@@ -38,7 +38,7 @@ function Main() {
                     <div className={magic.intro}>
                         <p>Welcome to our store</p>
                         <h1>Shop Our Amazing Selection of <br /> Liquor, Beer, And Wine</h1>
-                        <Link to='/coctails' className={magic.mainShop}>Shop now</Link>
+                        <Link to='/' className={magic.mainShop}>Shop now</Link>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,8 @@
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Main from './pages/Main'
+import Categories from './pages/Categories'
+
 import './App.css';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -12,6 +14,7 @@ function App() {
         <Header />
         <Switch>
           <Route path='/' exact> <Main /> </Route>
+          <Route path='/categories' exact> <Categories /> </Route>
         </Switch>
         <Footer />
       </BrowserRouter>
