@@ -26,7 +26,7 @@ function Categories() {
             </div>
             <div className={magic.secondOne}>
                 <div className={magic.deskImage}>
-                    <img src={two} alt='wine'/>
+                    <img src={three} alt='wine'/>
                 </div>
                 <div className={magic.desk}>
                     <h3>Our database contains a wide variety <br/> of cocktail categories.</h3>
@@ -40,7 +40,7 @@ function Categories() {
             </div>
             <div className={magic.thirdOne}>
                 <div className={magic.deskImage}> 
-                    <img src={three} alt='ingrid'/>
+                    <img src={two} alt='ingrid'/>
                 </div>
                 <div className={magic.desk}>
                     <h3>Large database of various ingredients <br /> for your cocktails </h3>
@@ -49,7 +49,7 @@ function Categories() {
                         <li><img src={checkmark} alt='checkmark'/> Cocktails of different categories for any evening.</li>
                         <li><img src={checkmark} alt='checkmark'/> For each ingredient, you are guaranteed to find several cocktails.</li>
                     </ul>
-                    <div><Link to='/' className={magic.button        }>Show</Link></div>
+                    <div><Link to='/' className={magic.button}>Show</Link></div>
                 </div>
             </div>
         </div>
