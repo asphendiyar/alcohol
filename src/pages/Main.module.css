@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.main {
+    background: url('../assets/main_slider.png') no-repeat;
+    background-size: cover;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    height: 100vh;
+}
+p {
+    display: block;
+    color:white;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h1 {
+    color:white;
+    font-size:64px;
+    font-weight: 600;
+   
+}
+.mainShop {
+    text-decoration: none;
+    margin-top: 32px;
+    background: none;
+    padding:25px 50px;
+    border: 2px solid #fff;
+    color:white;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 201px;
+}
+.mainShop:hover {
+    background: white;
+    color:black;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.ingredients{
+    width: 100%;
+    margin-top: 49px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 27px;
+    justify-content: space-evenly;
+}
+.ingredients div{
+    margin-top: 15px;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin-top: 15px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../assets/banner.png');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+.discountText {
+    margin-top: 47px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    color:white;
+    font-size: 55px;
+    line-height: 63px;
+    font-style: normal;
+    font-weight: normal;
+}
+.discountP{
+    margin-top: 20px;
+    color:white;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 25px;
+    line-height: 31px;
+    text-transform: capitalize;
+}
+.brands{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: capitalize;
+}
+.brandImages{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.brandImages img{
+    margin: 0 30px    
+}
+.wcu{
+    background: #151515;
+}
+.wcuInner{
+    display: flex;
+    flex-direction: column;
+}
+.question{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.question h4{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.question::after{
+    position: absolute;
+    content: '';
+    width: 25%;
+    height: 2px;
+    background-color:#CAA462;
+    bottom: 0;
+}
+.wcuVariants{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+.wcuVariants span{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #CAA462;
+}
+.wcuVariants p{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.subscribe h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+.subscribe h3 {
+    margin-top: 37px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+.subscribe form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.subscribe input {
+    margin: 0 auto;
+    width: 492px;
+    height: 39px;
+    font-family: 'Playfair Display', serif;
+    border: 2px solid #CAA462;
+    font-size: 14px;
+    outline: none;
+    padding-left: 10px;
+}
+input::placeholder{
+    font-size: 14px;
+}
+.subscribe button {
+    padding: 10px;
+    background-color: #CAA462;;
+    height: 40px;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Playfair Display', serif;
+    border: none;
+}
