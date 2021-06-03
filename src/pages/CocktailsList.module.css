@@ -1,0 +1,75 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.title{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.title h4{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: black;
+    margin-bottom: 15px;
+}
+.title::after{
+    position: absolute;
+    content: '';
+    width: 25%;
+    height: 2px;
+    background-color:#CAA462;
+    top: 80%;
+}
+.items {
+    margin-top: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cocktails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 73px;
+    margin-top: 54px;
+}
+.cocktails a img{
+    width: 230px;
+    float:left;
+    outline: 3px solid #fff;
+    outline-offset: -10px;
+}
+.button{
+    margin-top: 10px;
+    background-color: #CAA462;
+    padding: 3px;
+}
+.button div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    padding: 5px;
+}
+.button div img{
+    width: 14px;
+}
+.button p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+.cocktailsListWrapper{
+    margin-bottom: 52px;
+}
+

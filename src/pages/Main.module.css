@@ -227,3 +227,15 @@ input::placeholder{
     font-family: 'Playfair Display', serif;
     border: none;
 }
+.subscribed{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0.5rem 5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    background-color: #CAA462;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

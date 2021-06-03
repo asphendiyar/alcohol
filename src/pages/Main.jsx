@@ -12,12 +12,10 @@ import genius from '../assets/brands/genius.png'
 import jimBeam from '../assets/brands/jimbeam.png'
 import milestone from '../assets/brands/milestone.png'
 import miller from '../assets/brands/miller.png'
-
 import group1 from '../assets/groupWCU/group1.png'
 import group2 from '../assets/groupWCU/group2.png'
 import group3 from '../assets/groupWCU/group3.png'
-
-
+import React from 'react'
 const ingredients = [
     {name: 'whiskey', src: whiskey, id: 1},
     {name: 'tequila', src: tequila, id: 2},
@@ -30,7 +28,10 @@ const ingredients = [
 
 
 function Main() {
-
+    const [subscribed, setSetbscribed] = React.useState(false);
+    const subscribeSuccess = () => {
+        setSetbscribed(true)
+    }
     return (
         <div>
             <div className={magic.main}>
@@ -38,7 +39,7 @@ function Main() {
                     <div className={magic.intro}>
                         <p>Welcome to our store</p>
                         <h1>Shop Our Amazing Selection of <br /> Liquor, Beer, And Wine</h1>
-                        <Link to='/' className={magic.mainShop}>Shop now</Link>
+                        <Link to='/cocktailslist' className={magic.mainShop}>Shop now</Link>
                     </div>
                 </div>
             </div>
@@ -101,10 +102,13 @@ function Main() {
             <div className={magic.subscribe}>
                 <h2>Get our latest news and special sales</h2>
                 <h3>YOU MAY UNSUBSCRIBE AT ANY MOMENT. FOR THAT PURPOSE, PLEASE FIND OUR CONTACT INFO IN THE LEGAL NOTICE.</h3>
-                <form>
-                    <input type='text' id='input' placeholder='Email Adress'></input> 
-                    <button>SUBSCRIBE</button>
-                </form>
+                {subscribed === true ? (<div className={magic.subscribed}>YOU HAVE SUCCESSFULLY SUBSCRIBED</div>):
+                (<form>
+                    <input type='email' placeholder='Email Adress'></input> 
+                    <button onClick={subscribeSuccess}>SUBSCRIBE</button>
+                </form>)
+                    }
+
             </div>
         </div>
     )

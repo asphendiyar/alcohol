@@ -17,7 +17,7 @@ function Categories() {
                         <li><img src={checkmark} alt='checkmark'/> A prerequisite for a good cocktail is its appearance.</li>
                         <li><img src={checkmark} alt='checkmark'/> A properly selected glass is 50% of success.</li>
                     </ul>
-                    <div><Link to='/' className={magic.button}>Show</Link></div>
+                    <div><Link to='/glasses' className={magic.button}>Show</Link></div>
                 </div>
 
                 <div className={magic.deskImage}>
@@ -35,7 +35,7 @@ function Categories() {
                         <li><img src={checkmark} alt='checkmark'/> Cocktails of different categories for any evening.</li>
                         <li><img src={checkmark} alt='checkmark'/> For each ingredient, you are guaranteed to find several cocktails.</li>
                     </ul>
-                    <div><Link to='/' className={magic.button}>Show</Link></div>
+                    <div><Link to='/cocktails' className={magic.button}>Show</Link></div>
                 </div>
             </div>
             <div className={magic.thirdOne}>
@@ -49,7 +49,7 @@ function Categories() {
                         <li><img src={checkmark} alt='checkmark'/> Cocktails of different categories for any evening.</li>
                         <li><img src={checkmark} alt='checkmark'/> For each ingredient, you are guaranteed to find several cocktails.</li>
                     </ul>
-                    <div><Link to='/' className={magic.button}>Show</Link></div>
+                    <div><Link to='/ingredients' className={magic.button}>Show</Link></div>
                 </div>
             </div>
         </div>

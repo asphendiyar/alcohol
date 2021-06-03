@@ -31,7 +31,7 @@ const Header = () => {
 
             <div className={magic.container}>
                 <div className={magic.bottom}>
-                <Link to='/'  as={ Link }><img src={logotype} alt="LOGO" /></Link>
+                <Link to='/' className={magic.logo} as={ Link }><img src={logotype} alt="LOGO" /></Link>
 
                     <div className={magic.links}>
                         {links.map(elem => (
