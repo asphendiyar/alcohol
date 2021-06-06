@@ -1,0 +1,156 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0 5rem;
+
+}
+.title h4{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: black;
+    margin-bottom: 15px;
+}
+.title::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color:#CAA462;
+    top: 80%;
+}
+
+.ingredientsPart {
+    background-color: #000;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid #fff;
+    outline-offset: -10px;
+    padding: 30px;
+    margin-top: 50px;
+}
+.ingredientsPart h5 {
+    color: white;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.ingredientsPart a{
+    margin-top: 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    color:white;
+    background: #CAA462;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    padding:9px 18px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+.info h5{
+    color: white;
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.details{
+    background-color: #000;
+    margin: 0 auto;
+    width: 33%;
+    outline: 1px solid #fff;
+    outline-offset: -10px;
+    padding: 20px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details ul{
+    margin-top: 55px;
+}
+.details p{
+    margin-top: 0.5rem;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+}
+
+.details ul li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
+    list-style: none;
+}
+
+
+.cocktailsImg img{
+    width: 100%;
+    outline: 1px solid #fff;
+    outline-offset: -10px;
+}
+.cocktailsImg {
+    width: 33%;
+    margin-right: 35px;
+}
+
+.instructions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    margin: 0 auto;
+    width: 33%;
+    outline: 1px solid #fff;
+    outline-offset: -10px;
+    padding: 30px;
+}
+.instructions p{
+    font-size: 14px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.language{
+    margin-top: 14px;
+    display: flex;
+}
+.language img{
+    margin: 0 13px;
+}
+.instruction{
+    margin-top: 14px;
+}
+.wishListBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #CAA462;
+    border: none;
+    color:white;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 50px;
+    outline: 1px solid #fff;
+    outline-offset: -7px;
+    padding: 10px;
+}

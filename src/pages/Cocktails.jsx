@@ -3,20 +3,20 @@ import magic from './OneForAll.module.css'
 import { Link } from 'react-router-dom'
 
 const Cocktails = () => {
-    const [ingredients, setIngredients] = React.useState([])
+    const [categories, setCategories] = React.useState([])
 
     React.useEffect (() => {
-        fetch(`https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list`)
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list`)
         .then(res => res.json())
-        .then(data =>  setIngredients(data.drinks))}, [])
+        .then(data =>  setCategories(data.drinks))}, [])
 
     return  (
         <div className={magic.container}>
             <div className={magic.title}>
-                <h4>Cocktails</h4>
+                <h4>Categories</h4>
             </div>
             <div className={magic.items}>
-                {ingredients.map(elem => <Link to='/'>{ elem.strIngredient1 }</Link>)}
+                {categories.map(elem => <Link to='/'>{ elem.strCategory }</Link>)}
             </div>
         </div>
     )

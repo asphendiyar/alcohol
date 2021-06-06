@@ -56,7 +56,7 @@ function Main() {
             <div className={magic.banner}>
                 <h1 className={magic.discountText}>Get an Extra 10% off your first <br/>order</h1>
                 <p className={magic.discountP}>With a large selection of popular spirits and hard to find rare liquors, <br/> we are your one stop shop for all your alcohol needs.</p>
-                <Link to='/coctails' className={magic.mainShop}>Shop now</Link>
+                <Link to='/cocktailslist' className={magic.mainShop}>Shop now</Link>
             </div>
             <div className={magic.brands}>
                 <h3>Popular Brands</h3>

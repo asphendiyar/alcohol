@@ -6,6 +6,7 @@ import Ingredients from './pages/Ingredients'
 import Cocktails from './pages/Cocktails'
 import Glasses from './pages/Glasses'
 import CocktailsList from './pages/CocktailsList'
+import Info from './pages/Info'
 
 
 import './App.css';
@@ -21,8 +22,9 @@ function App() {
           <Route path='/' exact> <Main /> </Route>
           <Route path='/categories' exact> <Categories /> </Route>
           <Route path='/cocktails'><Cocktails/></Route>
-        <Route path='/glasses'><Glasses/></Route>
+          <Route path='/glasses'><Glasses/></Route>
           <Route path='/ingredients'><Ingredients/></Route>
+          <Route path='/cocktailslist/:id'><Info/></Route>
           <Route path='/cocktailslist'><CocktailsList/></Route>
         </Switch>
         <Footer />

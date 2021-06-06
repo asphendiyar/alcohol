@@ -19,7 +19,7 @@ const CocktailsList = () => {
                 <div className={magic.items}>
                     {cocktails.map(elem => (
                         <div key={elem.idDrink} className={magic.cocktails}>
-                            <Link to={`/coctails/${elem.idDrink}`}><img src={elem.strDrinkThumb} alt={elem.strDrink} /></Link>
+                            <Link to={`/cocktailslist/${elem.idDrink}`}><img src={elem.strDrinkThumb} alt={elem.strDrink} /></Link>
                             <div className={magic.button}>
                                 <div>
                                     <p>{elem.strDrink}</p>

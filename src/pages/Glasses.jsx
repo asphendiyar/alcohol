@@ -3,12 +3,12 @@ import magic from './OneForAll.module.css'
 import { Link } from 'react-router-dom'
 
 const Glasses = () => {
-    const [ingredients, setIngredients] = React.useState([])
+    const [glasses, setGlasses] = React.useState([])
 
     React.useEffect (() => {
-        fetch(`https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list`)
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/list.php?g=list`)
         .then(res => res.json())
-        .then(data =>  setIngredients(data.drinks))}, [])
+        .then(data =>  setGlasses(data.drinks))}, [])
 
     return  (
         <div className={magic.container}>
@@ -16,7 +16,7 @@ const Glasses = () => {
                 <h4>Glasses</h4>
             </div>
             <div className={magic.items}>
-                {ingredients.map(elem => <Link to='/'>{ elem.strIngredient1 }</Link>)}
+                {glasses.map(elem => <Link to='/'>{ elem.strGlass}</Link>)}
             </div>
         </div>
     )
