@@ -1,0 +1,107 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    align-items: center;
+}
+.title{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0 3rem;
+}
+.title h4{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: black;
+    margin-bottom: 15px;
+}
+.title::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color:#CAA462;
+    top: 80%;
+}
+ form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+form input {
+    margin: 0 auto;
+    width: 492px;
+    height: 39px;
+    font-family: 'Playfair Display', serif;
+    border: 2px solid #CAA462;
+    font-size: 14px;
+    outline: none;
+    padding-left: 10px;
+}
+input::placeholder{
+    font-size: 14px;
+}
+form button {
+    padding: 10px;
+    background-color: #CAA462;;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    border: none;
+}
+
+.items {
+    margin-top: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 52px;
+}
+
+.cocktails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 73px;
+    margin-top: 54px;
+}
+.cocktails a img{
+    width: 230px;
+    float:left;
+    outline: 1px solid #fff;
+    outline-offset: -10px;
+}
+.button{
+    margin-top: 10px;
+    background-color: #CAA462;
+    padding: 3px;
+}
+.button div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    padding: 2px 10px;
+}
+.button div img{
+    width: 14px;
+}
+.button p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+

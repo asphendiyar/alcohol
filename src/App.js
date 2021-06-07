@@ -7,6 +7,7 @@ import Cocktails from './pages/Cocktails'
 import Glasses from './pages/Glasses'
 import CocktailsList from './pages/CocktailsList'
 import Info from './pages/Info'
+import Search from './pages/Search'
 
 
 import './App.css';
@@ -26,6 +27,7 @@ function App() {
           <Route path='/ingredients'><Ingredients/></Route>
           <Route path='/cocktailslist/:id'><Info/></Route>
           <Route path='/cocktailslist'><CocktailsList/></Route>
+          <Route path='/search'><Search/></Route>
         </Switch>
         <Footer />
       </BrowserRouter>
