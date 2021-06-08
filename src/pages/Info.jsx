@@ -8,7 +8,8 @@ import eng from '../assets/england.png'
 import ita from '../assets/italy.png'
 import checkmark from '../assets/checkmark.png'
 
-const Info = () => {
+const Info = (props) => {
+    const {onAdd} = props
     const { id } = useParams();
     useEffect (() => {
         fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`)
@@ -81,7 +82,7 @@ const Info = () => {
                         </div>
                 </div>
             </div>
-            <button className={magic.wishListBtn}>ADD TO WISHLIST</button>
+            <button onClick={onAdd} className={magic.wishListBtn}>ADD TO WISHLIST</button>
         </div>
     )
 }

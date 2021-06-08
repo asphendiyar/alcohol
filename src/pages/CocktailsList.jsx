@@ -2,10 +2,13 @@ import React from 'react'
 import magic from './CocktailsList.module.css'
 import {Link} from 'react-router-dom'
 import like from '../assets/like.png'
-const CocktailsList = () => {
+
+const CocktailsList = (props) => {
 
     const [cocktails , setCocktails] = React.useState([])
 
+    const { onAdd } = props
+    
     React.useEffect (() => {
         fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=')
         .then(res => res.json())
@@ -23,7 +26,7 @@ const CocktailsList = () => {
                             <div className={magic.button}>
                                 <div>
                                     <p>{elem.strDrink}</p>
-                                    <img src={like} alt='like'/>
+                                    <img onClick={onAdd} src={like} alt='like'/>
                                 </div>
                             </div>
                         </div>

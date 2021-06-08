@@ -1,17 +1,13 @@
 .container{
     max-width: 1440px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;    
-    align-items: center;
+    min-height: 470px;
 }
 .title{
     margin-top: 70px;
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 0 3rem;
 }
 .title h4{
     font-family: 'Playfair Display', serif;
@@ -25,43 +21,17 @@
 .title::after{
     position: absolute;
     content: '';
-    width: 100%;
+    width: 25%;
     height: 2px;
     background-color:#CAA462;
     top: 80%;
 }
- form {
-    margin-top: 40px;
-}
-
-form input {
-    margin: 0 auto;
-    width: 492px;
-    height: 39px;
-    font-family: 'Playfair Display', serif;
-    border: 2px solid #CAA462;
-    font-size: 14px;
-    outline: none;
-    padding-left: 10px;
-}
-input::placeholder{
-    font-size: 14px;
-}
-form button {
-    padding: 10px;
-    background-color: #CAA462;;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    border: none;
-}
 
 .items {
+    margin-top: 52px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 52px;
 }
 
@@ -75,7 +45,7 @@ form button {
 .cocktails a img{
     width: 230px;
     float:left;
-    outline: 1px solid #fff;
+    outline: 3px solid #fff;
     outline-offset: -10px;
 }
 .button{
@@ -88,25 +58,17 @@ form button {
     justify-content: space-between;
     align-items: center;
     border: 1px solid white;
-    padding: 2px 10px;
+    padding: 5px;
 }
 .button div img{
-    margin-bottom: 0.3rem;
-    margin-right: 0.5rem;
     width: 14px;
-    transition: 0.3s;
-}
-.button div img:hover{
-    transform: scale(1.5);
-
 }
 .button p{
     color: white;
     text-transform: capitalize;
     font-size: 18px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
-

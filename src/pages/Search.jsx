@@ -4,7 +4,9 @@ import like from '../assets/like.png'
 import { Link } from 'react-router-dom'
 import magic from './Search.module.css'
 
-const Search = () => {
+const Search = (props) => {
+
+    const {onAdd} = props
     
     const [list, setList] = React.useState([])
     const [search, setSearch] = React.useState('')
@@ -37,7 +39,7 @@ const Search = () => {
                                 <div className={magic.button}>
                                     <div>
                                         <p>{elem.strDrink}</p>
-                                        <img src={like} alt='like'/>
+                                        <img onClick={onAdd} src={like} alt='like'/>
                                     </div>
                                 </div>
                             </div>

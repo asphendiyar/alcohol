@@ -13,7 +13,8 @@ const links = [
     {label: 'Contacts', to: '/contacts', id: 5}
   ]
 
-const Header = () => {
+const Header = (props) => {
+    const {count} = props
   return (
     <div>
         <div className={magic.header}>
@@ -21,8 +22,7 @@ const Header = () => {
                 <div className={magic.top}>
                     <span> Order online or call us (1800) 000 8808 </span>
                     <span>
-                        <img src={wishlist} alt="wishlist" />
-                        WISHLIST
+                        <Link to="/wishlist"> <img src={wishlist} alt="wishlist" /> WISHLIST {count !== 0 ? <p>{count}</p> : ""}</Link> 
                     </span>
                 </div> 
             </div>

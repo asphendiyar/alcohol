@@ -48,7 +48,7 @@
 .button{
     margin-top: 10px;
     background-color: #CAA462;
-    padding: 3px;
+    padding: 5px 5px;
 }
 .button div{
     display: flex;
@@ -58,7 +58,14 @@
     padding: 5px;
 }
 .button div img{
+    margin-bottom: 0.3rem;
+    margin-right: 0.5rem;
     width: 14px;
+    transition: 0.3s;
+}
+.button div img:hover{
+    transform: scale(1.5);
+
 }
 .button p{
     color: white;

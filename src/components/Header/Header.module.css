@@ -19,6 +19,22 @@
     display: flex;
     justify-content: space-between;;
 }
+.top span a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
+.top span img {
+    margin-right: 5px;
+}
+.top p{
+    font-size: 16px;
+    padding: 0.2rem;
+    margin-top: 0.5rem;
+    font-weight: 900;
+}
 span{
     color: white;
     font-style: normal;
